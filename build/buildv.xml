@@ -1,0 +1,68 @@
+<!--
+
+
+ Build.xml: Building an mde application with h2forms 
+            based on mowareMRS 
+            
+ daniel stieger, winter 19, koblach
+
+ 
+ 
+ 
+ set JAVA_HOME=c:\javaexe\MPS324\jre
+ set PATH=%PATH%;c:\javaexe\ant_MPS25\bin
+ 
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+  
+-->
+ 
+<project name="MdeApplication" default="default">      
+  <property name="mowarePluginHomeDir"  	value = "/Users/danielstieger/javaexe/MoPluginFake" />
+  <property name="mowareMpsHomeDir"  		value = "/Users/danielstieger/javaexe/MPS335" />
+  
+  <!-- **** include files setup **************************************************************** -->
+  <property name="baseProjectHome"          value = "/Users/danielstieger/javaware/postoffice" />
+  <property name="mowarePluginHomeDir"  	value = "${user.home}/.MPS33/config/plugins/moware" />
+  <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
+
+  <!-- **** app specific definitions **************************************************************** -->
+  <property name="appName"              value="VaadinParcelApp" />
+  <property name="appMainclass"         value="org.modellwerkstatt.postoffice.app.PostofficeApp" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/postoffice/app/Vaadin_MySql.xml" /> 
+  <property name="appHomeScreen"        value="${appName}" />
+  <property name="appBuildVersion"      value="2.0" />
+  	
+  <!-- **** solutions to incorporate in this build ************************************************** -->
+  <property name="solultionSimpleGen"   value="${baseProjectHome}/solutions/postoffice/classes_gen" />
+
+
+
+
+   <target name="default" depends="clean, moware.vaadinforms">  
+    <mkdir dir="work/WEB-INF/classes"/>
+    <copy todir="work/WEB-INF/classes">
+      <fileset dir="${solultionSimpleGen}" />
+    </copy>
+    <copy todir="work/WEB-INF/lib">
+      <fileset dir="${mowarePluginHomeDir}/jars/addons" />
+    </copy>
+    
+    
+    <mkdir dir="dist"/>  
+    <jar destfile="dist/${appName}.war" basedir="${mowareWorkDir}" update="false">
+      <manifest>
+        <attribute name="Main-Class" value="${appMainclass}" />
+        <attribute name="Version"    value="${appBuildVersion}" />
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="clean" description="Delete old work and dist directories">
+	<delete dir="work"/>
+    <delete dir="dist"/>
+  </target>
+
+  
+</project>

@@ -5,11 +5,15 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="${mowareHome}/objectflow/languages/objectflow/jars/addons/mysql-connector-java-8.0.11.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">37fdf88a-1025-4d01-864a-0bf987f72e6f(org.modellwerkstatt.manmap.runtime)</dependency>
     <dependency reexport="false">5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.objectflow.runtime)</dependency>
+    <dependency reexport="false">86b5ca77-71d4-452d-8c64-76f13a80aab6(org.modellwerkstatt.fx8forms)</dependency>
   </dependencies>
   <languageVersions>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
@@ -26,6 +30,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="86b5ca77-71d4-452d-8c64-76f13a80aab6(org.modellwerkstatt.fx8forms)" version="0" />
     <module reference="37fdf88a-1025-4d01-864a-0bf987f72e6f(org.modellwerkstatt.manmap.runtime)" version="0" />
     <module reference="e5d01f71-0423-4c81-af40-55727d9a908f(org.modellwerkstatt.myshop)" version="0" />
     <module reference="5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.objectflow.runtime)" version="0" />

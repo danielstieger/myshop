@@ -1,0 +1,27 @@
+CREATE TABLE `TABLE_NOTE` (/* for entity org.modellwerkstatt.postoffice.entity.DeliveryNote*/ 
+ `ID` INT  (9) /* id */,
+ `NAME` VARCHAR  (50) /* name */,
+ `FROM_CITY` VARCHAR  (50) /* fromCity */,
+ `TO_CITY` VARCHAR  (50) /* toCity */,
+ `TOTAL_VAL` DECIMAL  (13, 4) /* totalVal */,
+ `STATUS` VARCHAR  (5) /* status */
+, `TCN` INT (9) NOT NULL
+); 
+CREATE UNIQUE INDEX `I_TABLE_NOTE_ID` ON `TABLE_NOTE` (`ID`);
+ALTER TABLE `TABLE_NOTE` ADD PRIMARY KEY (`ID`);
+ALTER TABLE `TABLE_NOTE` MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+
+CREATE TABLE `TABLE_ITEM` (/* for entity org.modellwerkstatt.postoffice.entity.Item*/ 
+ `ID` INT  (9) /* id */,
+ `ID_NOTE` INT  (9) /* id */,
+ `POS_NUM` INT  (9) /* posNum */,
+ `NAME` VARCHAR  (50) /* name */,
+ `QUANTITY` INT  (9) /* quantity */,
+ `VAL` DECIMAL  (13, 4) /* val */
+, `TCN` INT (9) NOT NULL
+); 
+CREATE UNIQUE INDEX `I_TABLE_ITEM_ID` ON `TABLE_ITEM` (`ID`);
+CREATE INDEX `I_TABLE_ITEM_ID_NOTE` ON `TABLE_ITEM` (`ID_NOTE`);
+ALTER TABLE `TABLE_ITEM` ADD PRIMARY KEY (`ID`);
+ALTER TABLE `TABLE_ITEM` MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;

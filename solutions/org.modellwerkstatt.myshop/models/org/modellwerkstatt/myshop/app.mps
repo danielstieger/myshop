@@ -7,6 +7,7 @@
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
   </languages>
   <imports>
+    <import index="w2mn" ref="r:b4875332-3229-436b-afe7-85cc38a152da(org.modellwerkstatt.myshop.invoiceUnit)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" implicit="true" />
   </imports>
   <registry>
@@ -63,6 +64,9 @@
       <concept id="3146313690715522043" name="org.modellwerkstatt.objectflow.structure.Platform" flags="ng" index="2kDv1q">
         <child id="7604036740764640824" name="variantDeclarations" index="3hNl4o" />
       </concept>
+      <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
+        <reference id="3875131616719438756" name="command" index="2_Hrw8" />
+      </concept>
       <concept id="478945708906770773" name="org.modellwerkstatt.objectflow.structure.OFXConfig" flags="ng" index="2CG7Z0">
         <property id="3526396426252206723" name="lastUpdated" index="2320hu" />
         <child id="406105322043153886" name="dependencyResolution" index="20ptHX" />
@@ -106,6 +110,7 @@
       </concept>
       <concept id="7784207101901652180" name="org.modellwerkstatt.dataux.structure.AppUiModule" flags="ng" index="2MVcZ9">
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
+        <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
@@ -114,6 +119,7 @@
       <concept id="7784207101902693001" name="org.modellwerkstatt.dataux.structure.OptOfficialAppName" flags="ng" index="2MZaQk">
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
+      <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -190,16 +196,16 @@
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoFakeLockService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="2RoKLt0pbfd" role="2CJdiS">
-        <property role="TrG5h" value="printFactory" />
-        <node concept="Xl_RD" id="2RoKLt0pbfe" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.OFXFakePrintFactory" />
-        </node>
-      </node>
       <node concept="2CJf3v" id="7HkVpVc$sFt" role="2CJdiS">
         <property role="TrG5h" value="eventBus" />
         <node concept="Xl_RD" id="7HkVpVc$sFu" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.objectflow.services.MoFakeEventBus" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="1CyCEw9phUN" role="2CJdiS">
+        <property role="TrG5h" value="fakePrintSrv" />
+        <node concept="Xl_RD" id="1CyCEw9phUO" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXFakePrintFactory" />
         </node>
       </node>
     </node>
@@ -675,7 +681,7 @@
       <node concept="2CJf3v" id="21a32Cmm3SB" role="2CJdiS">
         <property role="TrG5h" value="deprecatedServerDateProvider" />
         <node concept="Xl_RD" id="21a32Cmm3SC" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.DeprecatedServerDateProvider" />
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.DeprecatedServerDateProvider" />
         </node>
       </node>
       <node concept="2CJf3v" id="21a32Cmm3SD" role="2CJdiS">
@@ -687,7 +693,7 @@
       <node concept="2CJf3v" id="5zF9hZsEnqh" role="2CJdiS">
         <property role="TrG5h" value="stringFormatter" />
         <node concept="Xl_RD" id="5zF9hZsEnqj" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.OFXStringFormatter" />
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXStringFormatter2" />
         </node>
       </node>
     </node>
@@ -710,12 +716,6 @@
         </node>
         <node concept="Xl_RD" id="1$$A7zNpxzI" role="2CJf0U">
           <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="21a32Cmm3SG" role="2CJdiS">
-        <property role="TrG5h" value="userEnviormentInformation" />
-        <node concept="Xl_RD" id="21a32Cmm3SH" role="2CJf0U">
-          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.ObjectFlowRT.UserEnvironmentInformation" />
         </node>
       </node>
       <node concept="2CJ4_Q" id="4bjBXGrB1Mf" role="2CJdiS">
@@ -877,6 +877,9 @@
   <node concept="2MVcZ9" id="4bjBXGryKDh">
     <property role="TrG5h" value="MyBookStoreApp" />
     <ref role="2WPtWl" node="1$$A7zM8Bg6" resolve="FX8_MySql" />
+    <node concept="33WYYh" id="1CyCEw9mCw4" role="2N77jT">
+      <ref role="2_Hrw8" to="w2mn:3ame6j6yJ60" resolve="Search Invoice" />
+    </node>
     <node concept="3ulXEM" id="40ZzJ0VGKXd" role="3ulXEG">
       <property role="TrG5h" value="cnt" />
       <node concept="10Oyi0" id="40ZzJ0VGKXw" role="1tU5fm" />
