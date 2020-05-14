@@ -14,8 +14,8 @@ interface is completle adoptable - it is not a CRUD scaffolding!
 
 There are two demos available on our homepage: 
 
-* Creating the app with the DDD template [download](https://www.modellwerkstatt.org/part1.mp4)
-* Running the app with different runtimes [download](https://www.modellwerkstatt.org/part2.mp4)
+* Creating the app with the DDD template [Video Part 1](https://www.modellwerkstatt.org/part1.mp4)
+* Running the app with different runtimes [Video Part 2](https://www.modellwerkstatt.org/part2.mp4)
 
     
 
