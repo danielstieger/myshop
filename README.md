@@ -9,7 +9,15 @@ an application to keep track of all invoices. Therefore, they want to
 This repository contains the MyBookStoreApp which fulfills those stated requirements. Interestingly, the app itself is created automatically by the Werkbank 
 Domain Driven Design Template. Based on the data-structures Invoice & InvoicePosition the template creates a complete interface with controllers, service, 
 factory and repositories. Following the guidelines of Domain Driven Design one can change and extend the created artefacts for individuall needs. The user 
-interface is completle adoptable - it is not a CRUD scaffolding.      
+interface is completle adoptable - it is not a CRUD scaffolding!
+
+
+There are two demos available on our homepage: 
+
+* Creating the app with the DDD template [download](https://www.modellwerkstatt.org/part1.mp4)
+* Running the app with different runtimes [download](https://www.modellwerkstatt.org/part2.mp4)
+
+    
 
 In order to try out this Werkbank DDD Tempalte on your own, following components are needed:
 

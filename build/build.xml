@@ -23,19 +23,19 @@
   <property name="mowareMpsHomeDir"  		value = "/Users/danielstieger/javaexe/MPS335" />
   
   <!-- **** include files setup **************************************************************** -->
-  <property name="baseProjectHome"          value = "/Users/danielstieger/javaware/postoffice" />
+  <property name="baseProjectHome"          value = "/Users/danielstieger/javaware/myshop" />
   <property name="mowarePluginHomeDir"  	value = "${user.home}/.MPS33/config/plugins/moware" />
   <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
 
   <!-- **** app specific definitions **************************************************************** -->
-  <property name="appName"              value="ParcelApp" />
-  <property name="appMainclass"         value="org.modellwerkstatt.postoffice.app.PostofficeApp" />
-  <property name="appConfiguration"     value="org/modellwerkstatt/postoffice/app/Mde_MySql.xml" /> 
+  <property name="appName"              value="BookStoreApp" />
+  <property name="appMainclass"         value="org.modellwerkstatt.myshop.app.MyBookStoreApp" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/myshop/app/Mde_MySql.xml" /> 
   <property name="appHomeScreen"        value="${appName}" />
-  <property name="appBuildVersion"      value="2.0" />
-
+  <property name="appBuildVersion"      value="1.0" />
+  
   <!-- **** solutions to incorporate in this build ************************************************** -->
-  <property name="solultionSimpleGen"   value="${baseProjectHome}/solutions/postoffice/classes_gen" />
+  <property name="solultionSimpleGen"   value="${baseProjectHome}/solutions/org.modellwerkstatt.myshop/classes_gen" />
 
 
 
@@ -51,9 +51,9 @@
     </copy>
 
 	<delete file="work/static/template_suivant/images/mpreis.png"/>
-	<copy file="./mpreis.png" tofile="work/static/template_suivant/images/mpreis.png" force="true" verbose="true"/>
+	<copy file="../artefacts/logo.png" tofile="work/static/template_suivant/images/mpreis.png" force="true" verbose="true"/>
 	<delete file="work/static/template_suivant/images/logo-small.png"/>
-	<copy file="./mpreis.png" tofile="work/static/template_suivant/images/logo-small.png" force="true" verbose="true"/>
+	<copy file="../artefacts/logo.png" tofile="work/static/template_suivant/images/logo-small.png" force="true" verbose="true"/>
 	
 	
     

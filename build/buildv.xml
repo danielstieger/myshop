@@ -23,21 +23,19 @@
   <property name="mowareMpsHomeDir"  		value = "/Users/danielstieger/javaexe/MPS335" />
   
   <!-- **** include files setup **************************************************************** -->
-  <property name="baseProjectHome"          value = "/Users/danielstieger/javaware/postoffice" />
+  <property name="baseProjectHome"          value = "/Users/danielstieger/javaware/myshop" />
   <property name="mowarePluginHomeDir"  	value = "${user.home}/.MPS33/config/plugins/moware" />
   <include file="${mowarePluginHomeDir}/ofassembly/moware.xml" as="moware"/>
 
   <!-- **** app specific definitions **************************************************************** -->
-  <property name="appName"              value="VaadinParcelApp" />
-  <property name="appMainclass"         value="org.modellwerkstatt.postoffice.app.PostofficeApp" />
-  <property name="appConfiguration"     value="org/modellwerkstatt/postoffice/app/Vaadin_MySql.xml" /> 
+  <property name="appName"              value="BookStoreAppVaadin" />
+  <property name="appMainclass"         value="org.modellwerkstatt.myshop.app.MyBookStoreApp" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/myshop/app/Vaadin_MySql.xml" /> 
   <property name="appHomeScreen"        value="${appName}" />
-  <property name="appBuildVersion"      value="2.0" />
-  	
+  <property name="appBuildVersion"      value="1.0" />
+  
   <!-- **** solutions to incorporate in this build ************************************************** -->
-  <property name="solultionSimpleGen"   value="${baseProjectHome}/solutions/postoffice/classes_gen" />
-
-
+  <property name="solultionSimpleGen"   value="${baseProjectHome}/solutions/org.modellwerkstatt.myshop/classes_gen" />
 
 
    <target name="default" depends="clean, moware.vaadinforms">  
