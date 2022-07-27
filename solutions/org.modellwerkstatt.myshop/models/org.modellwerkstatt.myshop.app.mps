@@ -28,21 +28,12 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
     </language>
-    <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
-      <concept id="3875131616719432922" name="org.modellwerkstatt.objectflow.structure.CommandCallBasis" flags="ng" index="2_HltQ">
-        <reference id="3875131616719438756" name="command" index="2_Hrw8" />
-      </concept>
-    </language>
     <language id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux">
-      <concept id="2781909770750560564" name="org.modellwerkstatt.dataux.structure.AppTile" flags="ng" index="2$ntO6">
-        <child id="2781909770750560899" name="action" index="2$ntUL" />
-      </concept>
       <concept id="3226612376922221452" name="org.modellwerkstatt.dataux.structure.IModule" flags="ng" index="2A_d5g">
         <reference id="1335996842166433049" name="configuration" index="2WPtWl" />
         <child id="3226612376922221534" name="options" index="2A_d42" />
       </concept>
       <concept id="7784207101901652180" name="org.modellwerkstatt.dataux.structure.AppUiModule" flags="ng" index="2MVcZ9">
-        <child id="2781909770750563212" name="tiles" index="2$nsuY" />
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
       </concept>
       <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
@@ -52,7 +43,6 @@
       <concept id="7784207101902693001" name="org.modellwerkstatt.dataux.structure.OptOfficialAppName" flags="ng" index="2MZaQk">
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
-      <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -63,11 +53,6 @@
   <node concept="2MVcZ9" id="4xpOsNWPgN9">
     <property role="TrG5h" value="BookshopApp" />
     <ref role="2WPtWl" to="dqkd:1$$A7zM8Bg6" resolve="FX8_Lola" />
-    <node concept="2$ntO6" id="4xpOsNWPhkH" role="2$nsuY">
-      <node concept="33WYYh" id="4xpOsNWPhkI" role="2$ntUL">
-        <ref role="2_Hrw8" to="pb4w:4xpOsNWPgsc" resolve="Search Order" />
-      </node>
-    </node>
     <node concept="2MWAvL" id="4xpOsNWPgNa" role="2A_d42">
       <node concept="Xl_RD" id="4xpOsNWPhcd" role="2MWAvM">
         <property role="Xl_RC" value="1.0" />
