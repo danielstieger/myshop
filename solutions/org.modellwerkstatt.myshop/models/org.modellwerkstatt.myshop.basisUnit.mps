@@ -550,7 +550,7 @@
         <node concept="2CJ4$C" id="3drXVOoNMYp" role="2CJ4_l">
           <property role="TrG5h" value="URL" />
           <node concept="Xl_RD" id="3drXVOoNMYx" role="2CaGCA">
-            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
+            <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest.mpreis.co.at:1521/LOLA" />
           </node>
         </node>
         <node concept="2CJ4$C" id="3drXVOoNMYE" role="2CJ4_l">
