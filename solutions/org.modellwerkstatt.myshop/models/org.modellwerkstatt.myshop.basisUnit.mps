@@ -1192,5 +1192,73 @@
       </node>
     </node>
   </node>
+  <node concept="2CG7Z0" id="6bNLBf5HyXI">
+    <property role="TrG5h" value="FX8_TestLola" />
+    <property role="2320hu" value="2018-07-23T14:08:19.761+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJ4_Q" id="6bNLBf5HyXJ" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="6bNLBf5HyXK" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="6bNLBf5HyXL" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.myshop.basisUnit.ShopRessources_FX8" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="6bNLBf5HyYI" role="2CGBMS">
+      <property role="TrG5h" value="user" />
+      <node concept="Xl_RD" id="6bNLBf5HyYJ" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.myshop.basisUnit.ShopRessources_FX8" />
+      </node>
+    </node>
+    <node concept="2CJoq6" id="6bNLBf5HyXM" role="2CGBMS">
+      <property role="TrG5h" value="SetupLog4j_4_Console___Set_Level_Simple" />
+      <node concept="2CJf3v" id="6bNLBf5HyXN" role="2CJdiS">
+        <property role="TrG5h" value="logConfig_1" />
+        <node concept="Xl_RD" id="6bNLBf5HyXO" role="2CJf0U">
+          <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.Log4JLogLevel" />
+        </node>
+        <node concept="2CJf1O" id="6bNLBf5HyXP" role="2CJ4_l">
+          <node concept="Xl_RD" id="6bNLBf5HyXQ" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="6bNLBf5HyXR" role="2DqwMp">
+            <property role="Xl_RC" value="Simple" />
+          </node>
+        </node>
+        <node concept="2CJf1O" id="6bNLBf5HyXS" role="2CJ4_l">
+          <node concept="Xl_RD" id="6bNLBf5HyXT" role="2DqwMv">
+            <property role="Xl_RC" value="String" />
+          </node>
+          <node concept="Xl_RD" id="6bNLBf5HyXU" role="2DqwMp">
+            <property role="Xl_RC" value="INFO" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2CJf3v" id="6bNLBf5HyXV" role="2CGBMS">
+      <property role="TrG5h" value="fxUiFactory" />
+      <node concept="Xl_RD" id="6bNLBf5HyXW" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.fx8forms.windows.FX8UiFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="6bNLBf5HyXX" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$iWn" resolve="FatPrinting" />
+    </node>
+    <node concept="2CJ4_Q" id="6bNLBf5HyXY" role="2CGBMS">
+      <ref role="2CJ4_N" node="6jihzUGVoek" resolve="FakeLockBus" />
+    </node>
+    <node concept="2CJ4_Q" id="6bNLBf5HyXZ" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$jk8" resolve="SingleConToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="6bNLBf5HyY0" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="6bNLBf5HyY1" role="20ptHX">
+      <node concept="Xl_RD" id="6bNLBf5HyY2" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.myshop" />
+      </node>
+    </node>
+  </node>
 </model>
 
