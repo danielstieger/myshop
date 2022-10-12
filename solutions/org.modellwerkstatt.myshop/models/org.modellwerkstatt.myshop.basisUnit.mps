@@ -1207,8 +1207,30 @@
     </node>
     <node concept="2CJf3v" id="6bNLBf5HyYI" role="2CGBMS">
       <property role="TrG5h" value="user" />
+      <node concept="2CJf1O" id="3_7elNDhfLW" role="2CJ4_l">
+        <node concept="Xl_RD" id="3_7elNDhfLY" role="2DqwMp">
+          <property role="Xl_RC" value="daniels" />
+        </node>
+        <node concept="Xl_RD" id="3_7elNDhfM5" role="2DqwMv">
+          <property role="Xl_RC" value="0" />
+        </node>
+      </node>
+      <node concept="2CJf1O" id="3_7elNDhfMa" role="2CJ4_l">
+        <node concept="Xl_RD" id="3_7elNDhfMb" role="2DqwMp">
+          <property role="Xl_RC" value="4711" />
+        </node>
+        <node concept="Xl_RD" id="3_7elNDhfMc" role="2DqwMv">
+          <property role="Xl_RC" value="1" />
+        </node>
+      </node>
       <node concept="Xl_RD" id="6bNLBf5HyYJ" role="2CJf0U">
-        <property role="Xl_RC" value="org.modellwerkstatt.myshop.basisUnit.ShopRessources_FX8" />
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.UserEnvironmentInformation" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="3_7elNDl2vr" role="2CGBMS">
+      <property role="TrG5h" value="userService" />
+      <node concept="Xl_RD" id="3_7elNDl2vy" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.objectflow.runtime.OFXSimpleUserServices" />
       </node>
     </node>
     <node concept="2CJoq6" id="6bNLBf5HyXM" role="2CGBMS">

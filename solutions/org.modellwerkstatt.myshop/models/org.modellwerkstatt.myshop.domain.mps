@@ -73,6 +73,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -1047,18 +1048,21 @@
   </node>
   <node concept="2WPaUQ" id="6bNLBf5GZhL">
     <property role="TrG5h" value="OrderTests" />
-    <ref role="2WPtWl" to="dqkd:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="dqkd:6bNLBf5HyXI" resolve="FX8_TestLola" />
     <node concept="3yPF9F" id="6bNLBf5GZqz" role="3yMuLx">
       <property role="TrG5h" value="einfacher Test zum Zeitraum" />
       <node concept="3cqZAl" id="6bNLBf5GZq_" role="3clF45" />
       <node concept="3clFbS" id="6bNLBf5GZqA" role="3clF47">
         <node concept="1gVbGN" id="6bNLBf5GZrz" role="3cqZAp">
-          <node concept="1odsa" id="6bNLBf5GZrP" role="1gVkn0">
-            <ref role="1ods_" node="6bNLBf5Fp16" resolve="OrderSrv" />
-            <ref role="37wK5l" node="6bNLBf5GCOF" resolve="eroeffnenMitZeitraum" />
-            <node concept="2ShNRf" id="6bNLBf5GZs$" role="37wK5m">
-              <node concept="1pGfFk" id="6bNLBf5GZ_n" role="2ShVmc">
-                <ref role="37wK5l" node="4xpOsNWPfDt" resolve="Order" />
+          <node concept="3clFbC" id="3_7elNDl4mF" role="1gVkn0">
+            <node concept="3clFbT" id="3_7elNDl4nk" role="3uHU7w" />
+            <node concept="1odsa" id="6bNLBf5GZrP" role="3uHU7B">
+              <ref role="1ods_" node="6bNLBf5Fp16" resolve="OrderSrv" />
+              <ref role="37wK5l" node="6bNLBf5GCOF" resolve="eroeffnenMitZeitraum" />
+              <node concept="2ShNRf" id="6bNLBf5GZs$" role="37wK5m">
+                <node concept="1pGfFk" id="6bNLBf5GZ_n" role="2ShVmc">
+                  <ref role="37wK5l" node="4xpOsNWPfDt" resolve="Order" />
+                </node>
               </node>
             </node>
           </node>
