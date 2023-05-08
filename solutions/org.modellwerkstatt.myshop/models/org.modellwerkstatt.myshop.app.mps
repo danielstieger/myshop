@@ -3,12 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="64adc67c-5fcf-45f5-82db-6a6771963d93" name="org.modellwerkstatt.dataux" version="0" />
-    <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="0" />
-    <use id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap" version="0" />
   </languages>
   <imports>
     <import index="pb4w" ref="r:593e0bfa-12c3-43e4-b7c1-dc4360c9f2fd(org.modellwerkstatt.myshop.unit)" />
-    <import index="dqkd" ref="r:1bb94d7b-aad5-4627-bc1c-7f3d8f95d1dc(org.modellwerkstatt.myshop.basisUnit)" />
+    <import index="1utj" ref="r:be736a44-dda7-44ff-822c-ee63eb121f9f(org.modellwerkstatt.myshop.ressourcen)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -62,7 +60,7 @@
   </registry>
   <node concept="2MVcZ9" id="4xpOsNWPgN9">
     <property role="TrG5h" value="BookshopApp" />
-    <ref role="2WPtWl" to="dqkd:1$$A7zM8Bg6" resolve="FX8_Lola" />
+    <ref role="2WPtWl" to="1utj:1$$A7zM8Bg6" resolve="FX8_Lola" />
     <node concept="2MWAvL" id="4xpOsNWPgNa" role="2A_d42">
       <node concept="Xl_RD" id="4xpOsNWPhcd" role="2MWAvM">
         <property role="Xl_RC" value="1.0" />
@@ -84,7 +82,7 @@
     </node>
     <node concept="2$ntO6" id="7Pb1zGVqR5k" role="2$nsuY">
       <node concept="33WYYh" id="7Pb1zGVqR5l" role="2$ntUL">
-        <ref role="2_Hrw8" to="pb4w:6bNLBf5Fp5y" resolve="Search Order" />
+        <ref role="2_Hrw8" to="pb4w:54kqsve1_rU" resolve="Search Order" />
       </node>
     </node>
   </node>
