@@ -52,7 +52,11 @@
       <concept id="406105322043152820" name="org.modellwerkstatt.objectflow.structure.ComponentsScanning" flags="ng" index="20ptWn">
         <child id="406105322043152971" name="componentBaseName" index="20ptNC" />
       </concept>
+      <concept id="4862154259426722580" name="org.modellwerkstatt.objectflow.structure.Color" flags="ng" index="27cpit">
+        <property id="4862154259426722583" name="value" index="27cpiu" />
+      </concept>
       <concept id="1440642197017487130" name="org.modellwerkstatt.objectflow.structure.StaticRessources" flags="ng" index="il5tC">
+        <child id="4862154259426820861" name="color" index="27c1lO" />
         <child id="3146313690717155086" name="labels" index="2kzhMJ" />
         <child id="3146313690715522546" name="platforms" index="2kDvpj" />
       </concept>
@@ -1336,6 +1340,14 @@
   </node>
   <node concept="il5tC" id="4xpOsNWPglg">
     <property role="TrG5h" value="ShopRessources" />
+    <node concept="27cpit" id="6JkU7$97aQ6" role="27c1lO">
+      <property role="TrG5h" value="GRUEN" />
+      <property role="27cpiu" value="#70C1B3" />
+    </node>
+    <node concept="27cpit" id="6JkU7$97aQz" role="27c1lO">
+      <property role="TrG5h" value="GRAU" />
+      <property role="27cpiu" value="#CCCCCC" />
+    </node>
     <node concept="2kDv1q" id="4xpOsNWPgli" role="2kDvpj">
       <property role="TrG5h" value="FX8" />
     </node>
