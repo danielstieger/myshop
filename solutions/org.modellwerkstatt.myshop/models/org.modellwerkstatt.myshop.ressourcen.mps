@@ -1411,5 +1411,39 @@
       </node>
     </node>
   </node>
+  <node concept="2CG7Z0" id="4Ex3Fobawvj">
+    <property role="TrG5h" value="TurkuConfig" />
+    <property role="2320hu" value="2018-07-31T09:05:08.533+02:00" />
+    <property role="3GE5qa" value="configs" />
+    <node concept="2CJ4_Q" id="4Ex3Fobawvk" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$j0D" resolve="SimpleAppBase" />
+    </node>
+    <node concept="2CJf3v" id="4Ex3Fobawvn" role="2CGBMS">
+      <property role="TrG5h" value="platform" />
+      <node concept="Xl_RD" id="4Ex3Fobawvo" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.myshop.ressourcen.ShopRessources_FX8" />
+      </node>
+    </node>
+    <node concept="2CJf3v" id="4Ex3Fobawvp" role="2CGBMS">
+      <property role="TrG5h" value="appFactory" />
+      <node concept="Xl_RD" id="4Ex3Fobawvs" role="2CJf0U">
+        <property role="Xl_RC" value="org.modellwerkstatt.turkuforms.app.TurkuAppFactory" />
+      </node>
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvu" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sx7" resolve="FakeLockNBusNPrint" />
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvw" role="2CGBMS">
+      <ref role="2CJ4_N" node="7HkVpVc$sco" resolve="TomcatToLola" />
+    </node>
+    <node concept="2CJ4_Q" id="4Ex3Fobawvx" role="2CGBMS">
+      <ref role="2CJ4_N" node="21a32Cmm3Sq" resolve="MoWare_BasicInfrastructure" />
+    </node>
+    <node concept="20ptWn" id="4Ex3Fobawvy" role="20ptHX">
+      <node concept="Xl_RD" id="4Ex3Fobawvz" role="20ptNC">
+        <property role="Xl_RC" value="org.modellwerkstatt.myshop" />
+      </node>
+    </node>
+  </node>
 </model>
 
